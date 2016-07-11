@@ -1,0 +1,17 @@
+@prefix fofa:<http://xmlns.com/fofa/0.1/>.
+@prefix nfu:<http://example.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nfu:mySelf fofa:title "Mr".
+nfu:mySelf fofa:firstName "Zhongyang".
+nfu:mySelf fofa:lastName "Sun".
+nfu:mySelf nfu:emailAddress "sunzhongyang95@163.com".
+nfu:mySelf fofa:homepage "http://weibo.com/szy95".
+nfu:mySelf fofa:img "http://ww3.sinaimg.cn/mw690/6ab314e1jw8eue8fkym6qj20u00u0dj1.jpg".
+nfu:mySelf fofa:phone "13717558798"^^xsd:integer.
+nfu:mySelf nfu:friends nfu:LXC.
+nfu:mySelf nfu:food nfu:sushi.
+nfu:mySelf nfu:movie "Gone with the Wind".
+nfu:mySelf fofa:schoolHomepage "http://www.sysu.edu.cn".
+nfu:mySelf nfu:studentID "13331233"^^xsd:integer.
+nfu:mySelf nfu:zipCode "510006"^^xsd:integer.

@@ -1,0 +1,61 @@
+13331233 sunzhongyang
+
+1.
+
+SPARQL:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX fofa:<http://xmlns.com/fofa/0.1/>
+PREFIX nfu:<http://example.org/>
+
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+    FILTER( STR(?object) = "Sun")
+}
+
+RESULT:
+
+nfu:mySelf   fofa:lastName  "Sun"
+
+2.
+
+SPARQL:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX fofa:<http://xmlns.com/fofa/0.1/>
+PREFIX nfu:<http://example.org/>
+
+SELECT ?subject
+WHERE {
+  ?subject nfu:friends nfu:LXC
+}
+
+RESULT:
+
+nfu:mySelf
+
+3.
+
+SPARQL:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX fofa:<http://xmlns.com/fofa/0.1/>
+PREFIX nfu:<http://example.org/>
+
+SELECT ?name
+WHERE {
+  ?subject nfu:friends nfu:LXC
+    {?subject nfu:emailAddress ?name}
+  UNION
+    {?subject fofa:phone ?name}
+}
+
+RESULT:
+
+"sunzhongyang95@163.com"
+
+13717558798

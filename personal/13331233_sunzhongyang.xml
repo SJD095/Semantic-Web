@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:fofa="http://xmlns.com/fofa/0.1/"
+         xmlns:nfu="http://example.org/">
+
+  <rdf:Description rdf:about="http://example.org/mySelf">
+    <fofa:title>Mr</fofa:title>
+    <fofa:firstName>Zhongyang</fofa:firstName>
+    <fofa:lastName>Sun</fofa:lastName>
+    <nfu:emailAddress>sunzhongyang95@163.com</nfu:emailAddress>
+    <fofa:homepage>http://weibo.com/szy95</fofa:homepage>
+    <fofa:img>http://ww3.sinaimg.cn/mw690/6ab314e1jw8eue8fkym6qj20u00u0dj1.jpg</fofa:img>
+    <fofa:phone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13717558798</fofa:phone>
+    <nfu:friends rdf:resource="http://example.org/LXC"/>
+    <nfu:food rdf:resource="http://example.org/sushi"/>
+    <nfu:movie>Gone with the Wind</nfu:movie>
+    <fofa:schoolHomepage>http://www.sysu.edu.cn</fofa:schoolHomepage>
+    <nfu:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13331233</nfu:studentID>
+    <nfu:zipCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">510006</nfu:zipCode>
+  </rdf:Description>
+
+</rdf:RDF>

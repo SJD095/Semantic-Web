@@ -1,0 +1,16 @@
+[PrefixDeclaration]
+:		http://www.example.org/books#
+
+[SourceDeclaration]
+sourceUri	h2
+connectionUrl	jdbc:h2:tcp://localhost/./../data/books
+username	sa
+password	rioyxlgt
+driverClass	org.h2.Driver
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-f4e6769fdc7f4a3ca7c73384c9f4a9c4
+target		:book{bk_code} a :Book ; :bookTitle {bk_title}^^xsd:string . 
+source		SELECT "bk_code","bk_title" FROM "tb_books"
+]]
+

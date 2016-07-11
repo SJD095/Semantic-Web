@@ -1,0 +1,3 @@
+我在RDFSReasoning中使用String sparql = String.format("SELECT * WHERE { ?X <%s> ?Y .}", RDF.type);
+进行reasoning，根据RDF.type得出Museion同时也是artMuseum和Museum的实例，原因为Museion的类型是modernArtMuseum，而modernArtMuseum是artMuseum的subclass，而artMuseum同时是Museum的子集。
+另外还得出ChickenHut是tourism的实例，原因为TripAdvisorRating的定义域只能为tourism,而ChickenHut拥有这一性质。
